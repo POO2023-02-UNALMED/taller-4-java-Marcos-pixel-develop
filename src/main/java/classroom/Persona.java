@@ -1,14 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package classroom;
 
 public class Persona {
-
-    final long cedula;
+    
+    long cedula=0;
+    
     String nombre;
     static int totalPersonas;
     
     static {
         totalPersonas = 0;
-        cedula = 3;
+        //cedula = 0;
     }
 
     public Persona(long cedula, String nombre) {
@@ -37,7 +42,7 @@ public class Persona {
     public long getCedula() {
         return cedula;
     }
-
+    
     public String getNombre() {
         return nombre;
     }

@@ -1,12 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package classroom;
 
-public enum Tipo {
+
+
+    public enum Tipo {
 	DISCIPLINAR(10),FUNDAMENTACION(20),ELECTIVA(30);
 	
 	private int codigo;
 	private String nombre;
-	public Tipo(int codigo,String nombre) {
+	Tipo(int codigo) {
 		this.codigo = codigo;
-		this.nombre = nombre;
+		
 	}
+        Tipo(String nombre){
+            this.nombre=nombre;
+        }
 }
