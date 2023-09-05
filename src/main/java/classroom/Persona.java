@@ -2,20 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package classroom;
+package Asignatura;
 
 public class Persona {
     
-    long cedula=0;
+    long cedula=1;
     
     String nombre;
     static int totalPersonas;
     
     static {
         totalPersonas = 0;
-        //cedula = 0;
     }
-
+    public Persona(){
+        this.cedula=0;
+    }
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
